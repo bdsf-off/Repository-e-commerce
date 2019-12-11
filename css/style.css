@@ -1,0 +1,745 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Comfortaa-Light';
+  src: url("../font/Comfortaa-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Comfortaa-Bold';
+  src: url("../font/Comfortaa-Bold.ttf");
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/hero.jpg");
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  background-color: #D0CCD0;
+  position: absolute;
+  width: 100%;
+  height: 584px;
+  left: -1px;
+  top: 162px;
+}
+
+
+
+a:hover {
+  background-color: rgba(128, 222, 78, 0.5);
+  transition: ease .5s;
+}
+
+/* Main Navigation */
+.logo-ctn {
+  padding: 10px;
+  width: 340px;
+  margin-top: -26px;
+}
+
+.main-nav nav, .main-nav .nav-links ul {
+  display: flex;
+}
+
+.main-nav nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav {
+  width: 100%;
+  height: 162px;
+  background-color: white;
+    z-index: 1;
+    position: fixed;
+}
+
+.main-nav img{
+  margin-top: 20px;
+}
+
+.main-nav .nav-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav .nav-links li {
+  display: inline-block;
+  padding: 20px 22px;
+}
+
+.main-nav .nav-links a {
+  text-decoration: none;
+}
+
+a {
+  color: #B1AFAB;
+}
+
+p {
+  margin-top: 0;
+}
+
+
+
+/* Bandeau des rayons du site */
+.bandeau {
+  background: rgba(144, 200, 25, 0.59);
+  width: 100%;
+  height: 42px;
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  top:120px;
+}
+
+.bandeau li a {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1555px;
+  margin: 0 auto;
+}
+
+/*  */
+.annonceCALLtoo {
+  position: absolute;
+  top: 140px;
+  left: 1150px;
+}
+
+.annonceCALLtoo a {
+  background-color: #90C819;
+  color: white;
+  padding: 11px 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  height: 68px;
+  padding-top: 6px;
+}
+
+.annonceCALLtoo h1 {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
+
+.annonceCALLtoo img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+/*      PROMOTIONS      */
+.PROMOS {
+  top: 1000px;
+  width: 100%;
+}
+
+/* PROMO LIVRAISON GRATUITE */
+.promo1 {
+  position: absolute;
+  width: 788px;
+  height: 484px;
+  left: 78px;
+  top: 1530px;
+  background-color: grey;
+  background-image: url("../images/bgpromo1.webp");
+}
+
+.promo1 div {
+  position: absolute;
+  width: 788px;
+  height: 220px;
+  left: 0px;
+  top: 178px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.promo1 div p {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-size: 50px;
+  color: ORANGE;
+  text-align: right;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+.promo1 div p span {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-size: 35px;
+  color: #6A6966;
+  text-align: center;
+}
+
+/* PROMO -10E  */
+.promo2 {
+  position: absolute;
+  width: 788px;
+  height: 484px;
+  left: 994px;
+  top: 1530px;
+  background-color: grey;
+  background-image: url("../images/bgpromo2.webp");
+}
+
+.promo2 div {
+  position: absolute;
+  width: 788px;
+  height: 220px;
+  left: 0px;
+  top: 178px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.promo2 div p {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-size: 53px;
+  color: #F34C60;
+  text-align: center;
+  margin-top: 27px;
+  margin-right: 20px;
+  padding-left: 270px;
+}
+
+.promo2 div p span {
+  font-family: 'Comfortaa-Light';
+  font-style: normal;
+  font-size: 35px;
+  color: #6A6966;
+  text-align: center;
+}
+
+/* SEPARATEURS */
+.SEPARATEUR1 {
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  background: #90C819;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 661px;
+  padding-top: 0px;
+}
+
+.SEPARATEUR2 {
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  background: #90C819;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 2075px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.SEPARATEUR3 {
+  position: absolute;
+  width: 75%;
+  height: 2px;
+  background: #90C819;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 2850px;
+}
+
+/* PRODUITS COUPS DE COEUR */
+.COUP-COEUR {
+  font-family: 'Comfortaa-Light';
+  top: 1000px;
+  width: 100%;
+}
+
+.titrechamps {
+  font-family: 'Comfortaa-Light';
+  font-size: 50px;
+  position: absolute;
+  font-size: 60px;
+  color: #6A6966;
+  top: 2150px;
+  left: 541px;
+}
+
+.product-img {
+  position: relative;
+}
+
+.product-action {
+  color: #6A6966;
+  font-family: 'Comfortaa-Light';
+  font-size: 46px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.product-action p {
+  margin-top: 25px;
+  font-size: 35px;
+}
+
+.product-action i {
+  font-size: 40px;
+}
+
+.productcta {
+  color: white;
+  padding: 11px 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  height: 68px;
+  padding-top: 6px;
+}
+
+.imgprod {
+  border-radius: 20px;
+}
+
+.product-img .overlay {
+  opacity: 0;
+  background-color: rgba(128, 222, 78, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  display: flex;
+}
+
+.overlay {
+  border-radius: 20px;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-img:hover .overlay {
+  opacity: 1;
+  transition: ease .4s;
+}
+
+.nomProduit {
+  font-size: 25px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.product-action .nomProduit {
+  color: #90C819;
+  font-size: 25px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+/* PRODUIT N° 1 */
+.product1 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 305px;
+  height: 264px;
+  background-color: grey;
+  top: 2300px;
+  bottom: 0px;
+  left: 165px;
+}
+
+.product1img img {
+  max-height: 100%;
+  position: relative;
+}
+
+.product1img p {
+  color: white;
+  text-shadow: 2px 2px 4px green;
+  font-family: 'Comfortaa-Light';
+  font-size: 29px;
+  color: white;
+  padding-top: 23px;
+  position: absolute;
+  width: 403px;
+  height: 100px;
+  left: 0px;
+  top: 301px;
+  background: rgba(106, 105, 102, 0.74);
+}
+
+/* PRODUIT N° 2 */
+.product2 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 305px;
+  height: 264px;
+  background-color: grey;
+  top: 2300px;
+  bottom: 0px;
+  left: 1046px;
+}
+
+.product2img img {
+  max-height: 100%;
+  position: relative;
+}
+
+.product2img p {
+  color: white;
+  text-shadow: 2px 2px 4px green;
+  font-family: 'Comfortaa-Light';
+  font-size: 29px;
+  color: white;
+  padding-top: 23px;
+  position: absolute;
+  width: 403px;
+  height: 100px;
+  left: 0px;
+  top: 301px;
+  background: rgba(106, 105, 102, 0.74);
+}
+
+/* PRODUIT N° 3 */
+.product3 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 305px;
+  height: 264px;
+  background-color: grey;
+  top: 2300px;
+  bottom: 0px;
+  left: 595px;
+}
+
+.product3img img {
+  max-height: 100%;
+  position: relative;
+}
+
+.product3img p {
+  color: white;
+  text-shadow: 2px 2px 4px green;
+  font-family: 'Comfortaa-Light';
+  font-size: 29px;
+  color: white;
+  padding-top: 23px;
+  position: absolute;
+  width: 403px;
+  height: 100px;
+  left: 0px;
+  top: 301px;
+  background: rgba(106, 105, 102, 0.74);
+}
+
+/* PRODUIT 4 */
+.product4 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 305px;
+  height: 264px;
+  background-color: grey;
+  top: 2300px;
+  bottom: 0px;
+  left: 1450px;
+}
+
+.product4img img {
+  max-height: 100%;
+  position: relative;
+}
+
+.product4img p {
+  color: white;
+  text-shadow: 2px 2px 4px green;
+  font-family: 'Comfortaa-Light';
+  font-size: 29px;
+  color: white;
+  padding-top: 23px;
+  position: absolute;
+  width: 403px;
+  height: 100px;
+  left: 0px;
+  top: 301px;
+  background: rgba(106, 105, 102, 0.74);
+}
+
+/* BANDEAU PROMOTIONNEL */
+.BANDEAUPROMOTION {
+  width: 100%;
+  height: 750px;
+  background-image: url("../images/bgpromo2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 740px;
+}
+
+.BANDEAUPROMOTION p {
+  font-family: 'Comfortaa-Bold';
+  position: absolute;
+  color: #F34C60;
+  font-size: 100px;
+  top: 320px;
+  left: 508px;
+  margin: 50px;
+}
+
+.BANDEAUPROMOTION a {
+  position: absolute;
+  font-size: 46px;
+  top: 630px;
+  left: 795px;
+}
+
+.BANDEAUPROMOTION span {
+  color: #6A6966
+}
+
+.productctaBANDEAU {
+  background-color: #F34C60;
+  color: white;
+  padding: 11px 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  height: 68px;
+  padding-top: 6px;
+}
+
+/* BANDEAU AVANTAGE ENTREPRISE */
+.bandeauAVANTAGES {
+  background-color: grey;
+  height: 300px;
+  width: 100%;
+  top: 2925px;
+  color: white;
+  position: absolute;
+  display: flex;
+}
+
+.avantages p {
+  font-family: 'Comfortaa-Bold';
+  font-size: 25px;
+}
+
+.avantage1 {
+  color: white;
+  position: absolute;
+  top: 215px;
+  left: 130px;
+}
+
+/* PLACEMENT DES P DE LA SECTION */
+.avantage2 {
+  position: absolute;
+  color: white;
+  top: 200px;
+  left: 140px;
+}
+
+.avantage2 {
+  position: absolute;
+  color: white;
+  top: 185px;
+  left: 770px;
+}
+
+.avantage3 {
+  justify-content: space-around;
+  position: absolute;
+  color: white;
+  top: 184px;
+  left: 1450px;
+  width: 300px;
+}
+
+/* PLACEMENT DES ICONES DE LA SECTION */
+.logoavantage1 {
+  position: absolute;
+  font-size: 2px;
+  height: 145px;
+  top: 45px;
+  left: 231px;
+}
+
+.logoavantage2 {
+  position: absolute;
+  font-size: 2px;
+  height: 136px;
+  top: 35px;
+  left: 875px;
+}
+
+.logoavantage3 {
+  position: absolute;
+  font-size: 2px;
+  height: 155px;
+  top: 35px;
+  left: 1520px;
+}
+
+display: inline-block;
+position: absolute;
+display: flex;
+list-style-type: none;
+align-items: center;
+justify-content: space-around;
+text-decoration: none;
+
+/* FOOTER */
+footer {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  background-color: white;
+}
+
+footer .footer-column {
+  width: 33%;
+  padding: 20px;
+  margin: 60px;
+  top: 0px;
+  position: absolute;
+  justify-content: space-between;
+}
+
+h2{
+  color: #90C819;
+}
+
+h4{
+  color: grey;
+}
+
+.COLUMS {
+  height: 350px;
+  width: 100%;
+  top: 3225px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+}
+
+.footer-column ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-column ul a:hover {
+  color: #EFEFEF;
+}
+
+.footer-column textarea {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* COLUMN1 */
+.COLUMN1 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 80%;
+  padding: 20px;
+  margin: 40px;
+  left: 525px;
+  bottom: -280px;
+}
+
+.about {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+
+
+/* COLUMN2 */
+.COLUMN2 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  left: 0px;
+  bottom: -175px;
+}
+
+.links li {
+  margin-bottom: 14px;
+}
+
+/* COLUMN3 */
+.COLUMN3 {
+  font-family: 'Comfortaa-Light';
+  position: absolute;
+  width: 80%;
+  padding: 20px;
+  margin: 30px;
+  left: 1195px;
+  bottom: -280px;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=tel] {
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type=submit] {
+  display: block;
+  padding: 10px 0px;
+  color: black;
+  radius: 8px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.1rem;
+  transition: 0.1s ease;
+}
+
+.contact-form input[type=submit]:hover {
+  cursor: pointer;
+  background: #CFCFCF;
+}
